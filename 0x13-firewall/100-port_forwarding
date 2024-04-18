@@ -1,4 +1,3 @@
-# Firewalls can not only filter requests, they can also forward them.
 #
 # rules.before
 #
@@ -9,7 +8,6 @@
 #   ufw-before-forward
 #
 
-# The port forwarding section 
 *nat
 :PREROUTING ACCEPT [0:0]
 -A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80
