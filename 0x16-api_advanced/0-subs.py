@@ -2,7 +2,7 @@ import requests
 
 def number_of_subscribers(subreddit):
     """ Set a custom User-Agent to avoid issues with "Too Many Requests" error """
-    headers = {'User-Agent': 'python:subscribers-check:v1.0 (by /u/yourusername)'}
+    headers = {'User-Agent': 'python:subscribers-check:v1.0 (by /u/Frankie1891)'}
 
     """ Reddit API URL for getting subreddit information """
     url = f'https://www.reddit.com/r/{}/hot/about.json'
