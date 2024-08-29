@@ -5,7 +5,7 @@ def number_of_subscribers(subreddit):
     headers = {'User-Agent': 'python:subscribers-check:v1.0 (by /u/yourusername)'}
 
     """ Reddit API URL for getting subreddit information """
-    url = f'https://www.reddit.com/r/{subreddit}/about.json'
+    url = f'https://www.reddit.com/r/{}/hot/about.json'
     
     try:
         response = requests.get(url, headers=headers, allow_redirects=False)
